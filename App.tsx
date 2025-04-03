@@ -7,10 +7,10 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView >
-      <Text preset="headingLarge" style={{color: 'red'}}>
+      <Text italic bold preset="headingLarge">
         Coffstack
       </Text>
-      <Text preset="headingMedium" style={{color: 'blue'}}>
+      <Text preset="headingLarge">
         Coffstack
       </Text>
       <Text preset="headingSmall">
