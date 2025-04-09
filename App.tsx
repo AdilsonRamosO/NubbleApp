@@ -5,9 +5,9 @@ import {Button} from './src/components/Button/Button';
 
 import {Text} from './src/components/Text/Text';
 import {theme} from './src/theme/theme';
+import {Box} from './src/components/Box/Box';
 
 function App(): React.JSX.Element {
-
   return (
     <ThemeProvider theme={theme}>
       <SafeAreaView>
@@ -15,7 +15,11 @@ function App(): React.JSX.Element {
           <Text italic bold preset="headingLarge">
             Coffstack
           </Text>
-          <Button title="Entrar" />
+
+          <Box marginBottom="s24">
+            <Button title="Entrar" />
+          </Box>
+          <Button loading title="Lading" />
         </View>
       </SafeAreaView>
     </ThemeProvider>
