@@ -13,7 +13,7 @@ interface ButtonProps {
 export function Button({title, loading}: ButtonProps) {
   return (
     <TouchableOpacityBox
-      backgroundColor="buttonPrimary"
+      backgroundColor="carrotSecondary"
       paddingHorizontal="s20"
       height={50}
       alignItems='center'
