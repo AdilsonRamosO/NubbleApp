@@ -11,7 +11,7 @@ interface ButtonProps extends TouchableOpacityBoxProps {
 export function Button({title, loading, ...touchableOpacityBoxProps}: ButtonProps) {
   return (
     <TouchableOpacityBox
-      backgroundColor="carrotSecondary"
+      backgroundColor="buttonPrimary"
       paddingHorizontal="s20"
       height={50}
       alignItems='center'
@@ -22,7 +22,7 @@ export function Button({title, loading, ...touchableOpacityBoxProps}: ButtonProp
       {loading ? (
         <ActivityIndicator />
       ) : (
-        <Text preset="paragraphMedium" bold style={{color: 'white'}}>
+        <Text preset="paragraphMedium" bold color="primaryContrast">
           {title}
         </Text>
       )}
