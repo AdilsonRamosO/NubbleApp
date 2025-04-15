@@ -14,7 +14,9 @@ function App(): React.JSX.Element {
           <Text italic bold preset="headingLarge">
             Coffstack
           </Text>
-          <Button title="Entrar" marginBottom='s12' />
+          <Button preset='primary' title="Primary" marginBottom='s12' />
+          <Button preset='outline' title="Outline" marginBottom='s12' />
+          <Button preset='secondary' title="Secondary" marginBottom='s12' />
           <Button loading title="Lading" />
         </View>
       </SafeAreaView>
