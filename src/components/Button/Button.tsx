@@ -1,16 +1,14 @@
 import React from 'react';
 import {Text} from '../Text/Text';
-import {useTheme} from '@shopify/restyle';
-import {Theme} from '../../theme/theme';
-import {Box, TouchableOpacityBox} from '../Box/Box';
+import {TouchableOpacityBox, TouchableOpacityBoxProps} from '../Box/Box';
 import {ActivityIndicator} from 'react-native';
 
-interface ButtonProps {
+interface ButtonProps extends TouchableOpacityBoxProps {
   title: string;
   loading?: boolean;
 }
 
-export function Button({title, loading}: ButtonProps) {
+export function Button({title, loading, ...touchableOpacityBoxProps}: ButtonProps) {
   return (
     <TouchableOpacityBox
       backgroundColor="carrotSecondary"
@@ -19,6 +17,7 @@ export function Button({title, loading}: ButtonProps) {
       alignItems='center'
       justifyContent='center'
       borderRadius='s16'
+      {...touchableOpacityBoxProps}
     >
       {loading ? (
         <ActivityIndicator />

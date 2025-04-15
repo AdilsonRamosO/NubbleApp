@@ -17,14 +17,14 @@ import {Theme} from '../../theme/theme';
 
 export const Box = createBox<Theme>();
 
-export type TouchableOpacityBox = BackgroundColorProps<Theme> &
+export type TouchableOpacityBoxProps = BackgroundColorProps<Theme> &
   SpacingProps<Theme> &
   LayoutProps<Theme> &
   BorderProps<Theme> &
   SpacingShorthandProps<Theme> &
   RNTouchableOpacityProps;
 export const TouchableOpacityBox = createRestyleComponent<
-  TouchableOpacityBox,
+TouchableOpacityBoxProps,
   Theme
 >(
   [backgroundColor, spacing, spacingShorthand, layout, border],
