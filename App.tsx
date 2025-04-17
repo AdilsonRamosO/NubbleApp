@@ -15,8 +15,9 @@ function App(): React.JSX.Element {
             Coffstack
           </Text>
           <Button preset='primary' title="Primary" marginBottom='s12' />
+          <Button preset='primary' disabled title="Primary" marginBottom='s12' />
           <Button preset='outline' title="Outline" marginBottom='s12' />
-          <Button preset='secondary' title="Secondary" marginBottom='s12' />
+          <Button preset='outline' disabled title="Outline" marginBottom='s12' />
           <Button loading title="Lading" />
         </View>
       </SafeAreaView>
