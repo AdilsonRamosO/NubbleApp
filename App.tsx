@@ -1,4 +1,3 @@
-import React from 'react';
 import {SafeAreaView} from 'react-native';
 
 import {Text} from './src/components/Text/Text';
@@ -6,13 +5,11 @@ import {Text} from './src/components/Text/Text';
 function App() {
   return (
     <SafeAreaView>
-      <Text preset="headingLarge" style={{color: 'red'}}>
-        Hello World
+      <Text preset="paragraphMedium" italic bold>
+        Coffstack
       </Text>
-      <Text preset="paragraphCaption" style={{fontFamily: 'Satoshi-Black'}}>
-        Hello World
-      </Text>
-      <Text preset="paragraphMedium">Hello World</Text>
+      <Text preset="headingLarge" italic >Coffstack</Text>
+      <Text preset="paragraphMedium">Coffstack</Text>
     </SafeAreaView>
   );
 }
