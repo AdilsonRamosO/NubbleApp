@@ -9,7 +9,7 @@ function App() {
       <Text preset="headingLarge" style={{color: 'red'}}>
         Hello World
       </Text>
-      <Text preset="paragraphCaption" style={{color: 'red'}}>
+      <Text preset="paragraphCaption" style={{fontFamily: 'Satoshi-Black'}}>
         Hello World
       </Text>
       <Text preset="paragraphMedium">Hello World</Text>
